@@ -1,2 +1,1 @@
-# lostgrid-site
-Website for Lost Grid
+Read the docs: http://bruth.github.io/jekyll-docs-template
