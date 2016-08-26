@@ -34,7 +34,7 @@
   width: 100%;
   box-sizing: border-box;
   &.padding-left {
-    margin-left: 400px;
+    margin-left: 300px;
   }
   &__inner {
     max-width: 1260px;
@@ -50,7 +50,7 @@
       padding: 0 25px;
     }
     &.shift-left {
-      margin-left: 400px;
+      margin-left: 300px;
     }
   }
   &--content {
@@ -75,11 +75,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    max-width: 400px;
+    max-width: 350px;
     background: $orange;
     box-sizing: border-box;
     padding: 90px 50px;
-    margin: 0 0 0 -400px;
+    margin: 0 0 0 -350px;
     transition: margin 0.3s cubic-bezier(.36,.24,.35,1.03);
     text-align: right;
     z-index: 3;
