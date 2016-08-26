@@ -92,9 +92,13 @@
     }
     ul {
       margin-bottom: 2rem;
+
+      li {
+        line-height: 1.8;
+      }
+
       a {
         display: block;
-        line-height: 2;
         color: $white;
         &.is-active {
           color: $dark-grey;

@@ -1,61 +1,90 @@
 // list styles
 .list {
-  &--bare {
-    padding: 0;
-    margin: 0;
-    li {
-      list-style: none;
-    }
-  }
-  &--center {
-    float: left;
-    position: relative;
-    left: 50%;
-    @include custom-breakpoint(620px) {
-      left: auto;
-      float: none;
-    }
-    li {
-      float: left;
-      position: relative;
-      right: 50%;
-      margin: 0 1rem;
-      padding-bottom: 1px;
-      @include custom-breakpoint(620px) {
-        right: auto;
-        float: none;
-      }
-      &:first-child {
-        @include custom-breakpoint(620px) {
-          margin-bottom: 1rem;
+    &--bare {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
         }
-      }
     }
-  }
+
+    &--center {
+        float: left;
+        position: relative;
+        left: 50%;
+
+        @include custom-breakpoint(620px) {
+            left: auto;
+            float: none;
+        }
+
+        li {
+            float: left;
+            position: relative;
+            right: 50%;
+            margin: 0 1rem;
+            padding-bottom: 1px;
+
+            @include custom-breakpoint(620px) {
+                right: auto;
+                float: none;
+            }
+
+            &:first-child {
+                @include custom-breakpoint(620px) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    &--rules {
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: $light-grey;
+            font-family: monospace, monospace;
+            padding: 2px 5px;
+        }
+    }
 }
+
+.sub-note {
+    display: block;
+    font-size: 1em;
+}
+
 .align {
-  &--center {
-    text-align: center;
-  }
+    &--center {
+        text-align: center;
+    }
 }
+
 .sidebar-list {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .align-center {
-  text-align: center;
+    text-align: center;
 }
 .lede {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  margin-bottom: 3rem;
-  letter-spacing: -1px;
-  @include breakpoint(m) {
-    font-size: 2rem;
-  }
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    letter-spacing: -1px;
+    font-weight: 400;
+
+    @include breakpoint(m) {
+        font-size: 2rem;
+    }
 }
+
 // align vertical center
 .vc {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
