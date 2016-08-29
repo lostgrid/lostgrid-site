@@ -102,10 +102,16 @@
       a {
         display: block;
         color: $white;
+        position: relative;
+        left: 0;
 
-        &.is-active {
-          color: $dark-grey;
-        }
+          &:hover {
+              left: 5px;
+          }
+
+          &.is-active {
+              color: $dark-grey;
+          }
       }
     }
     li {
