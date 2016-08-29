@@ -7,6 +7,7 @@
   margin-bottom: 4px;
   position: relative;
   border-radius: 2rem;
+  font-size: 1.2em;
   &:active {
     top: 2px;
   }
@@ -61,3 +62,23 @@
   position: relative;
   top: 4px;
 }
+
+// table
+.table--rules {
+    border: 1px solid $off-white;
+    background-color: $very-light-grey;
+
+    td {
+        padding: 10px 15px;
+    }
+
+    &__code {
+        width: 20%;
+    }
+
+    &__description {
+        width: 80%;
+    }
+}
+
+

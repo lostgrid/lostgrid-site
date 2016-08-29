@@ -28,20 +28,20 @@ title: "Jekyll Docs Template"
         {% for doc in site.docs %}
           <article class="section--content" id="{{ doc.id }}">
             <h3>{{ doc.title }}</h3>
-            <ul>
+            <table class="table--rules" border="1" style="border-collapse:collapse; width:100%" cellpadding="3" cellspacing="3">
               {% for rule in doc.rules %}
-                <li>
-                  <code>{{ rule.rule }}</code> - {{ rule.description }}
+                <tr>
+                  <td class="table--rules__code"><code>{{ rule.rule }}</code></td>
+                  <td class="table--rules__description">
+                    {{ rule.description }}
+                    {% if rule.sub-note %}
+                        <span class="sub-note">Note: {{ rule.sub-note }}</span>
+                    {% endif %}
+                  </td>
 
-                  {% if rule.sub-note %}
-                  <ul>
-                    <li>{{ rule.sub-note }}</li>
-                  </ul>
-                  {% endif %}
-
-                </li>
+                </tr>
               {% endfor %}
-            </ul>
+            </table>
             {% if doc.code-example %}
 
                 {{ doc.content }}

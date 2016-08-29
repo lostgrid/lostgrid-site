@@ -7,16 +7,18 @@
 }
 body {
   color: $dark-grey;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   background-color: $off-white;
 }
 a {
-  color: $orange;
+  color: $turquoise;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-weight: 600;
+
   &:hover {
     color: darken($turquoise, 20);
   }
