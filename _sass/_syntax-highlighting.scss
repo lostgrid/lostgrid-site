@@ -1,8 +1,9 @@
 .highlight .hll {
-  background-color: #ffffcc;
+  background-color: none;
 }
 .highlight {
-  background: #ffffff;
+  background: $dark-grey;
+    color: $off-white;
 }
 .highlight .c {
   color: #888888;
@@ -109,7 +110,7 @@
 }
 /* Keyword.Type */
 .highlight .m {
-  color: #0000DD;
+  color: $khaki;
   font-weight: bold;
 }
 /* Literal.Number */
@@ -161,13 +162,12 @@
 }
 /* Name.Namespace */
 .highlight .py {
-  color: #336699;
+  color: $orange;
   font-weight: bold;
 }
 /* Name.Property */
 .highlight .nt {
-  color: #bb0066;
-  font-weight: bold;
+  color: $off-white;
 }
 /* Name.Tag */
 .highlight .nv {
