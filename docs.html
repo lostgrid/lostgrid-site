@@ -8,50 +8,10 @@ title: "Jekyll Docs Template"
 <div class="wrapper">
     <div class="section__inner" id="section-wrapper">
        <a href="/" class="[ logo logo--small ]">Lost Grid</a>
-        <article class="section--content" id="getting-started">
-            <h2 class="h1">1. Getting Started</h2>
-            <ul class="page-anchors list--bare">
-                <li><a href="#basic-columns">Basic Columns</a></li>
-                <li><a href="#centering-elements">Centering Elements</a></li>
-                <li><a href="#controlling-cycle">Controlling Cycle</a></li>
-                <li><a href="#nesting">Nesting</a></li>
-                <li><a href="#">Offseting Elements</a></li>
-                <li><a href="#">Alignment</a></li>
-                <li><a href="#">Edit Mode</a></li>
-                <li><a href="#">Vertical Grids</a></li>
-                <li><a href="#">Waffle Grids</a></li>
-                <li><a href="#">Flexbox Grids</a></li>
-                <li><a href="#">Masonry Support</a></li>
-            </ul>
-        </article>
 
-        {% for doc in site.docs %}
-          <article class="section--content" id="{{ doc.id }}">
-            <h3>{{ doc.title }}</h3>
-            {% if doc.description %}
-             <p>{{ doc.description }}</p>
-            {% endif %}
-            <table class="table--rules" border="1" style="border-collapse:collapse; width:100%" cellpadding="3" cellspacing="3">
-              {% for rule in doc.rules %}
-                <tr>
-                  <td class="table--rules__code"><code>{{ rule.rule }}</code></td>
-                  <td class="table--rules__description">
-                    {{ rule.description }}
-                    {% if rule.sub-note %}
-                        <span class="sub-note">Note: {{ rule.sub-note }}</span>
-                    {% endif %}
-                  </td>
+       {% include docs/getting-started.html %}
 
-                </tr>
-              {% endfor %}
-            </table>
-            {% if doc.code-example %}
-
-                {{ doc.content }}
-
-            {% endif %}
-          </article>
-        {% endfor %}
+        {% include docs/property-options.html %}
 
         <a href="#" class="scroll-top align--center">Back to top<i class="lg-up-open-mini arrow"></i></a>
      </div>
