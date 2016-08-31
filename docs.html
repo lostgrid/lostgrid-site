@@ -28,6 +28,9 @@ title: "Jekyll Docs Template"
         {% for doc in site.docs %}
           <article class="section--content" id="{{ doc.id }}">
             <h3>{{ doc.title }}</h3>
+            {% if doc.description %}
+             <p>{{ doc.description }}</p>
+            {% endif %}
             <table class="table--rules" border="1" style="border-collapse:collapse; width:100%" cellpadding="3" cellspacing="3">
               {% for rule in doc.rules %}
                 <tr>
