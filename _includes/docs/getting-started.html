@@ -3,7 +3,7 @@
     <ul class="page-anchors list--bare">
       {% for doc in site.docs %}
         {% if doc.type == "property-option" %}
-        <li><a href="#{{ doc.id }}">{{ doc.title }}</a></li>
+        <li><a href="#{{ doc.nav }}">{{ doc.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -11,7 +11,7 @@
 
 {% for doc in site.docs %}
   {% if doc.type == "getting-started" %}
-    <article class="section--content" id="{{ doc.id }}">
+    <article class="section--content" id="{{ doc.nav }}">
       <h3>{{ doc.title }}</h3>
       {% if doc.description %}
        <p>{{ doc.description }}</p>

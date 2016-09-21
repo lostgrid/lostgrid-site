@@ -1,6 +1,6 @@
 ---
 title: "Lost Column"
-id: "lost-column"
+nav: "lost-column"
 code-example: "true"
 rules:
   - rule: "fraction"
