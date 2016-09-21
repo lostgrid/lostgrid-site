@@ -19,6 +19,7 @@
          japick.slidePanel();
          japick.scrollToTop();
          japick.scrollToSection();
+         japick.sideNavigation();
          //japick.detectMobile();
       },
 
@@ -93,6 +94,21 @@
                 sectionWrapper.removeClass('shift-left');
             }
        },
+
+      sideNavigation: function() {
+        $('.nav__side a').on('click', function(e) {
+          e.preventDefault();
+
+
+          var target = this.hash;
+          var $target = $(target);
+
+
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 300, 'swing');
+        });
+      }
 
    };
 
