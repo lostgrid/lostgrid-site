@@ -20,15 +20,4 @@
 
 
     {{ content }}
-
-
-  {% if site.google_analytics_id != "" %} {% include google_analytics.html %} {% endif %}
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-<script>window.jQuery || document.write('<script src="{{ "/assets/js/jquery-2.2.0.min.js" | prepend: site.baseurl }}"><\/script>')</script>
-
-<script src="{{site.baseurl}}/assets/js/main.js"></script>
-
-</html>
+{% include footer.html %}
