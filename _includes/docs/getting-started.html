@@ -9,40 +9,41 @@
     </ul>
 </article>
 
-{% for doc in site.docs %}
-  <article class="section--content">
-    <p>
-      LostGrid rules look like this:
-    </p>
+<article class="section--content">
+  <p>
+    LostGrid rules look like this:
+  </p>
 {% highlight css %}
 div {
-  lost-column: 1/3;
+lost-column: 1/3;
 }
 {% endhighlight %}
 <p>
-  And the processed CSS looks like this:
+And the processed CSS looks like this:
 </p>
 {% highlight css %}
 div {
-  width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
 }
 div:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
+float: left;
+margin-right: 30px;
+clear: none;
 }
 div:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 div:nth-child(3n) {
-  margin-right: 0;
-  float: right;
+margin-right: 0;
+float: right;
 }
 div:nth-child(3n + 1) {
-  clear: both;
+clear: both;
 }
 {% endhighlight %}
-  </article>
+</article>
+
+{% for doc in site.docs %}
   {% if doc.type == "getting-started" %}
     <article class="section--content" id="{{ doc.nav }}">
       <h3>{{ doc.title }}</h3>
