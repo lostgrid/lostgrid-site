@@ -99,6 +99,8 @@
         $('.nav__side a').on('click', function(e) {
           e.preventDefault();
 
+          $('.nav__side a').removeClass('is-active');
+          $(this).addClass('is-active');
 
           var target = this.hash;
           var $target = $(target);
