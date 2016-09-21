@@ -16,19 +16,6 @@
       {% if doc.description %}
        <p>{{ doc.description }}</p>
       {% endif %}
-      <table class="table--rules" border="1" style="border-collapse:collapse; width:100%" cellpadding="3" cellspacing="3">
-        {% for rule in doc.rules %}
-          <tr>
-            <td class="table--rules__code"><code>{{ rule.rule }}</code></td>
-            <td class="table--rules__description">
-              {{ rule.description }}
-              {% if rule.sub-note %}
-                  <span class="sub-note">Note: {{ rule.sub-note }}</span>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
       {% if doc.code-example %}
           {{ doc.content }}
       {% endif %}
