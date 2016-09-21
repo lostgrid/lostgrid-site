@@ -3,6 +3,7 @@ title: "Lost Column"
 nav: "lost-column"
 code-example: "true"
 type: "property-option"
+description: "Creates a column that is a fraction of the size of its containing element's width with a gutter."
 rules:
   - rule: "fraction"
     description: "This is a simple fraction of the containing element's width."
