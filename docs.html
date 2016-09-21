@@ -6,12 +6,12 @@ title: "Jekyll Docs Template"
 {% include docs-sidebar.html %}
 
 <div class="wrapper">
-    <div class="section__inner" id="section-wrapper">
-      <a href="/" class="[ logo logo--small ]">Lost Grid</a>
+  <div class="section__inner" id="section-wrapper">
+    <a href="/" class="[ logo logo--small ]">Lost Grid</a>
 
-      {% include docs/getting-started.html %}
+    {% include docs/getting-started.html %}
 
-      {% include docs/property-options.html %}
+    {% include docs/property-options.html %}
 
     {% capture gotchas %}{% include docs/gotchas.md %}{% endcapture %}
     {{ gotchas | markdownify }}
@@ -22,3 +22,6 @@ title: "Jekyll Docs Template"
     {% capture thanks %}{% include docs/thanks.md %}{% endcapture %}
     {{ thanks | markdownify }}
 
+    <a href="#" class="scroll-top align--center">Back to top<i class="lg-up-open-mini arrow"></i></a>
+   </div>
+</div>
