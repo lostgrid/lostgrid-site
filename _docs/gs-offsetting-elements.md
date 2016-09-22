@@ -1,4 +1,5 @@
 ---
+order: 5
 title: "Offsetting Elements"
 nav: "offsetting-elements"
 code-example: "true"

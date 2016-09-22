@@ -1,4 +1,5 @@
 ---
+order: 12
 title: "Global Grid Settings"
 nav: "global-grid-settings"
 code-example: "true"

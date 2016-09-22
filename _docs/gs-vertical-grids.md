@@ -1,4 +1,5 @@
 ---
+order: 8
 title: "Vertical Grids"
 nav: "vertical-grids"
 code-example: "true"

@@ -1,4 +1,5 @@
 ---
+order: 7
 title: "Edit Mode"
 nav: "edit-mode"
 code-example: "true"

@@ -1,4 +1,5 @@
 ---
+order: 9
 title: "Waffle Grids"
 nav: "waffle-grids"
 code-example: "true"

@@ -1,7 +1,8 @@
 <article class="section--content" id="getting-started">
     <h2 class="h1">Getting Started</h2>
     <ul class="page-anchors list--bare">
-      {% for doc in site.docs %}
+      {% assign gs-docs = site.docs | sort: 'order' %}
+      {% for doc in gs-docs %}
         {% if doc.type == "getting-started" %}
         <li><a href="#{{ doc.nav }}">{{ doc.title }}</a></li>
         {% endif %}
@@ -43,7 +44,8 @@ div:nth-child(3n + 1) {
 {% endhighlight %}
 </article>
 
-{% for doc in site.docs %}
+{% assign gs-docs = site.docs | sort: 'order' %}
+{% for doc in gs-docs %}
   {% if doc.type == "getting-started" %}
     <article class="section--content" id="{{ doc.nav }}">
       <h3>{{ doc.title }}</h3>

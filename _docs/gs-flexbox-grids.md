@@ -1,4 +1,5 @@
 ---
+order: 10
 title: "Flexbox Grids"
 nav: "flexbox-grids"
 code-example: "true"

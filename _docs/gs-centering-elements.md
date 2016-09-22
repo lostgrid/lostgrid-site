@@ -1,4 +1,5 @@
 ---
+order: 2
 title: "Centering Elements"
 nav: "centering-elements"
 code-example: "true"

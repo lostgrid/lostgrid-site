@@ -1,4 +1,5 @@
 ---
+order: 11
 title: "Masonry Support"
 nav: "masonry-support"
 code-example: "true"

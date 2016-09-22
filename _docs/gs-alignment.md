@@ -1,4 +1,5 @@
 ---
+order: 6
 title: "Alignment"
 nav: "alignment"
 code-example: "true"
