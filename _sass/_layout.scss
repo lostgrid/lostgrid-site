@@ -143,3 +143,10 @@
 .highlight + p {
   margin-top: 25px;
 }
+
+// Custom for the align rule
+[id='lost-align'] {
+  .table--rules__code {
+    width: 50%;
+  }
+}
