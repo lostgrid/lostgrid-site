@@ -7,7 +7,7 @@ description: "Margin to the left, right, bottom, or top, of an element depending
 rules:
   - rule: "fraction"
     description: "Fraction of the container to be offset."
-  - rule: "row|column"
+  - rule: "row | column"
     description: "Direction the grid is going. Should be the opposite of the column or row it's being used on. Defaults to row."
     sub-note: "Negative numbers for right offsets, positive numbers for left offsets."
   - rule: "gutter"

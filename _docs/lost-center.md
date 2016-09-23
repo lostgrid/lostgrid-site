@@ -7,7 +7,7 @@ description: "Horizontally center a container element and apply padding to it."
 rules:
   - rule: "max-width"
     description: "A max-width to assign. Can be any unit."
-  - rule: "flex|no-flex"
+  - rule: "flex | no-flex"
     description: "(no-flex is default) Determines whether this element should use Flexbox or not."
 ---
 

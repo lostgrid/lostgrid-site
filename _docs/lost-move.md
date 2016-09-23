@@ -7,7 +7,7 @@ description: "Source ordering. Shift elements left, right, up, or down, by their
 rules:
   - rule: "fraction"
     description: "Fraction of the container to be shifted."
-  - rule: "row|column"
+  - rule: "row | column"
     description: "Direction the grid is going. Should be the opposite of the column or row it's being used on."
   - rule: "gutter"
     description: "Adjust the size of the gutter for this movement. Should match the element's gutter."

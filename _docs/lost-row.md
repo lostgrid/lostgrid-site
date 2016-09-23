@@ -10,7 +10,7 @@ rules:
   - rule: "gutter"
     description: "The margin on the bottom of the element used to create a gutter. Typically this is left alone and settings.gutter will be used, but you can override it here if you want certain elements to have a particularly large or small gutter (pass 0 for no gutter at all)."
     sub-note: "When specifying the gutter, you need to also specify the cycle."
-  - rule: "flex|no-flex"
+  - rule: "flex | no-flex"
     description: "Determines whether this element should use Flexbox or not."
   - rule: "none"
     description: "Resets the row (back to browser defaults)"
