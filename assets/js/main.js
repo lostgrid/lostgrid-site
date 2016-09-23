@@ -68,7 +68,6 @@
 
        scrollToSection: function() {
             $('.page-anchors a').on('click',function (e) {
-              e.preventDefault();
 
               var target = this.hash;
               var $target = $(target);
@@ -97,7 +96,6 @@
 
       sideNavigation: function() {
         $('.sidebar-list a').on('click', function(e) {
-          e.preventDefault();
 
           $('.sidebar-list a').removeClass('is-active');
           $(this).addClass('is-active');
