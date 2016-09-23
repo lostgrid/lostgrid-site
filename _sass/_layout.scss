@@ -136,6 +136,10 @@
   }
 }
 
+.highlight {
+  overflow-x: scroll;
+}
+
 .highlight + p {
   margin-top: 25px;
 }
