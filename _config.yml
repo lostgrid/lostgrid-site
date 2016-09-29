@@ -1,6 +1,7 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'LostGrid'
 subtitle: 'LostGrid is a powerful grid system built in PostCSS that works with any preprocessor and even vanilla CSS.'
+url: 'http://lostgrid.org'
 
 # if you use google analytics, add your tracking id here
 google_analytics_id: 'UA-71789679-1'
