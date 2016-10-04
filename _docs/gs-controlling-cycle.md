@@ -4,7 +4,7 @@ title: "Controlling Cycle"
 nav: "controlling-cycle"
 code-example: "true"
 type: "getting-started"
-description: "Every element gets a `float: left` and `margin-right: gutter` applied to it except the last element in the row and the last item in a container. Lost will automatically detect the last item in a row (based on the denominator you passed) and apply a `margin-right: 0` to it by default. To override this behavior and tell Lost to apply `margin-right: 0` to a specific iteration, simply pass a `cycle` param to your `lost-column` property. It's the second argument."
+description: "Every element gets a float: left; and margin-right: gutter; applied to it except the last element in the row and the last item in a container. Lost will automatically detect the last item in a row (based on the denominator you passed) and apply a margin-right: 0;, and float: right; to it by default. To override this behavior and tell Lost to apply margin-right: 0; and float: right; to a specific iteration, simply pass a cycle param to your lost-column property as the second argument."
 
 ---
 
@@ -51,4 +51,4 @@ div {
 }
 {% endhighlight %}
 
-The concept of `cycle` is **extremely important** to Lost and what sets good Lost developers apart from great Lost developers. Really try to grok this!
+The concept of `cycle` is **extremely important** to Lost and what sets good Lost developers apart from great Lost developers.
