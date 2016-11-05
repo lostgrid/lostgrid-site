@@ -12,7 +12,8 @@ description: "Lost uses PostCSS which means to override global variables we need
 @lost gutter 60px;
 @lost flexbox flex;
 @lost cycle none;
-@lost clearing left
+@lost clearing left;
+@lost rounder 100;
 
 .foo {
   ...
@@ -24,3 +25,4 @@ description: "Lost uses PostCSS which means to override global variables we need
 - `cycle` accepts `none` or any digit (although this is really weird). `auto` by default.
 - `clearing` accepts `left` or `both` (default).
   - See [#276](https://github.com/peterramsing/lost/issues/276) for details
+- `rounder` accepts any number, decimal or whole.
