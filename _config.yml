@@ -6,6 +6,10 @@ url: 'http://lostgrid.org'
 # if you use google analytics, add your tracking id here
 google_analytics_id: 'UA-71789679-1'
 
+
+# Version of LostGrid this is targeted for:
+docs-version: '7.1.0'
+
 # Enable/show navigation. There are there options:
 #   0 - always hide
 #   1 - always show
