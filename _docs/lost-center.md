@@ -13,10 +13,10 @@ rules:
 
 {% highlight css %}
 section {
-  lost-flex-container: row;
+  lost-center: 980px;
 }
 
-div {
-  lost-column: 1/2 flex;
+section {
+  lost-center: 1140px 30px flex;
 }
 {% endhighlight %}
