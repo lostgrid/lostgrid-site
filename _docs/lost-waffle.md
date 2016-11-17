@@ -13,6 +13,8 @@ rules:
     description: "The margin on the right and bottom side of the element used to create a gutter. Typically this is left alone and the global $gutter will be used, but you can override it here if you want certain elements to have a particularly large or small gutter (pass 0 for no gutter at all)."
   - rule: "flex | no-flex"
     description: "Determines whether this element should use Flexbox or not."
+  - rule: "float-right"
+    description: "Tells LostGrid to float the last element in the cycle to the right. `lost-waffle` floats all elements left by default."
 
 ---
 
@@ -22,6 +24,6 @@ section {
 }
 
 div {
-  lost-waffle: 1/3;
+  lost-waffle: 1/3 float-right;
 }
 {% endhighlight %}
