@@ -7,16 +7,18 @@ description: "Horizontally center a container element and apply padding to it."
 rules:
   - rule: "max-width"
     description: "A max-width to assign. Can be any unit."
+  - rule: "padding"
+    description: "Adds padding to the left and right of the generated container"
   - rule: "flex | no-flex"
     description: "(no-flex is default) Determines whether this element should use Flexbox or not."
 ---
 
 {% highlight css %}
 section {
-  lost-flex-container: row;
+  lost-center: 980px;
 }
 
-div {
-  lost-column: 1/2 flex;
+section {
+  lost-center: 1140px 30px flex;
 }
 {% endhighlight %}

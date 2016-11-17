@@ -23,18 +23,12 @@
             float: left;
             position: relative;
             right: 50%;
-            margin: 0 1rem;
+            margin: 0 1rem 1rem;
             padding-bottom: 1px;
 
             @include custom-breakpoint(620px) {
                 right: auto;
                 float: none;
-            }
-
-            &:first-child {
-                @include custom-breakpoint(620px) {
-                    margin-bottom: 1rem;
-                }
             }
         }
     }
