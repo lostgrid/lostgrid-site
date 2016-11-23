@@ -3,21 +3,25 @@ title: "Lost Local Gutter"
 nav: "lost-local-gutter"
 code-example: "true"
 type: "variable"
-description: "Align nested elements. Apply this to a parent container."
+description: "Allows you to output the gutter that is declared locally within the declaration."
 rules:
-  - rule: "flex | no-flex"
-    description: "Determines whether this element should use Flexbox or not."
+  - rule: "$lost-local-gutter"
+    description: "Outputs the value of the gutter for that particular declaration."
 ---
 
 {% highlight css %}
-.parent {
-  lost-align: right;
-  width: 600px;
-  height: 400px;
-}
-
-.child {
-  width: 300px;
-  height: 150px;
+.hero-area {
+  lost-column: 1/3 4 50px;
+  padding: $lost-local-gutter; /* 50px */
+  margin-top: $lost-gutter; /* 30px default gutter */
 }
 {% endhighlight %}
+
+#### For use with
+* `lost-column`
+* `lost-waffle`
+* `lost-row`
+* `lost-offset`
+* `lost-center`
+* `lost-masonry-wrap`
+* `lost-masonry-column`

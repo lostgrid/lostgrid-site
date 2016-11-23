@@ -3,21 +3,22 @@ title: "Lost Gutter"
 nav: "lost-gutter"
 code-example: "true"
 type: "variable"
-description: "Align nested elements. Apply this to a parent container."
+description: "Use the global gutter anywhere in the project to help consistency and readability."
 rules:
-  - rule: "flex | no-flex"
-    description: "Determines whether this element should use Flexbox or not."
+  - rule: "$lost-gutter"
+    description: "Outputs the value of the global gutter. Use this as a value anywhere in your project."
 ---
 
 {% highlight css %}
-.parent {
-  lost-align: right;
-  width: 600px;
-  height: 400px;
+.hero-area {
+  padding: $lost-gutter;
 }
+{% endhighlight %}
 
-.child {
-  width: 300px;
-  height: 150px;
+{% highlight css %}
+@lost gutter 40px;
+
+.h1 {
+  padding-top: $lost-gutter;
 }
 {% endhighlight %}
