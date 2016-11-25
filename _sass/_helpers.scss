@@ -84,3 +84,19 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.vc--lg-only {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  @include breakpoint(s) {
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
+.hero-top {
+  @include breakpoint(s) {
+    margin-top: 50px;
+  }
+}
