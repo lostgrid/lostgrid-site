@@ -8,3 +8,9 @@ description: "LostGrid is currently testing a beta version of Right-to-Left supp
 beta: true
 
 ---
+
+To take advantage of the right-to-left grids it is presently only a global option for all grids. It is prefixed with `--beta` in order to help guide the final API's design.
+
+{% highlight css %}
+@lost --beta-direction rtl;
+{% endhighlight %}
