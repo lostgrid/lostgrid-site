@@ -4,7 +4,14 @@
       {% assign gs-docs = site.docs | sort: 'order' %}
       {% for doc in gs-docs %}
         {% if doc.type == "getting-started" %}
-        <li><a href="#{{ doc.nav }}">{{ doc.title }}</a></li>
+        <li>
+          <a href="#{{ doc.nav }}">
+            {{ doc.title }}
+            {% if doc.beta %}
+              <span class="u-beta-notice">Beta</span>
+            {% endif %}
+          </a>
+        </li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -49,6 +56,9 @@ div:nth-child(3n + 1) {
   {% if doc.type == "getting-started" %}
     <article class="section--content" id="{{ doc.nav }}">
       <h3>{{ doc.title }}</h3>
+      {% if doc.beta %}
+        <span class="u-beta-notice">This is currently a feature in beta. Please expect syntax changes.</span>
+      {% endif %}
       {% if doc.description %}
        <p>{{ doc.description }}</p>
       {% endif %}

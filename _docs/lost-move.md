@@ -13,7 +13,7 @@ rules:
     description: "Adjust the size of the gutter for this movement. Should match the element's gutter."
 ---
 
-**If a gutter is set, lost-move will not retain it and will need to be set manually.** See [#195](https://github.com/peterramsing/lost/issues/195) for more details.
+If the gutter within the selector is set by `lost-column` or `lost-row` then it will be retained in the `lost-move` output *unless* the gutter is explicitly set by `lost-move` or `lost-move-gutter`.
 
 {% highlight css %}
 div {
