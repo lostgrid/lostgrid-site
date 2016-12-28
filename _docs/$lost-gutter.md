@@ -12,7 +12,7 @@ rules:
 ##### Default
 {% highlight css %}
 .hero-area {
-  padding: $lost-gutter;
+  padding: $lost-gutter; /* 30px */
 }
 {% endhighlight %}
 
@@ -21,6 +21,6 @@ rules:
 @lost gutter 40px;
 
 .h1 {
-  padding-top: $lost-gutter;
+  padding-top: $lost-gutter; /* 40px */
 }
 {% endhighlight %}
