@@ -9,12 +9,14 @@ rules:
     description: "Outputs the value of the global gutter. Use this as a value anywhere in your project."
 ---
 
+##### Default
 {% highlight css %}
 .hero-area {
   padding: $lost-gutter;
 }
 {% endhighlight %}
 
+##### Custom
 {% highlight css %}
 @lost gutter 40px;
 
