@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Getting Started with LostGrid"
+---
+
+{% include getting-started-sidebar.html %}
+
+<div class="wrapper">
+  <div class="section__inner" id="section-wrapper">
+
+    <article class="section--content" id="getting-started">
+        <h2 class="h1">Getting Started</h2>
+
+
+
+{% highlight js %}
+
+
+
+
+{% endhighlight %}
+
+
+    </article>
+
+
+
+    <article class="section--content" id="gulp">
+      <h3 class="h2">Gulp</h3>
+      <p>Here's an example of a Gulp project</p>
+
+      <p><a target="_blank" href="https://github.com/lostgrid/lostgrid-examples/tree/master/gulp">See Example Project</a></p>
+
+      <p>If you're looking for a project with SCSS (or possibly Less), here's an example for that: <a target="_blank" href="https://github.com/lostgrid/lostgrid-examples/tree/master/gulp-scss">SCSS + Gulp Example Project</a></p>
+
+{% highlight js %}
+
+const postcss = require('gulp-postcss');
+const lostgrid = require('lost');
+
+gulp.task('styles', () => {
+  gulp.src('source/main.css')
+    .pipe(postcss([
+      lostgrid()
+    ]))
+    .pipe(gulp.dest('build'));
+})
+
+{% endhighlight %}
+    </article>
+
+   </div>
+</div>
