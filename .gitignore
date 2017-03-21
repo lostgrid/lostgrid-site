@@ -2,3 +2,5 @@
 _site
 _pages
 .sass-cache
+
+.idea/
