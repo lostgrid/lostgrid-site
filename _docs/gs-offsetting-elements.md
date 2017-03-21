@@ -25,4 +25,4 @@ div:first-child {
 }
 {% endhighlight %}
 
-**Note: This is presently reversed from typical behavior due to initial API and the need to retain the API. Version 8 is planning to implement this in a more natural way.**
+**Note: the direction of the offset changed in Version 8 to be more natural. [Read More](https://github.com/peterramsing/lost/pull/331)**
