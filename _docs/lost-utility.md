@@ -9,7 +9,7 @@ rules:
     description: "This will add a semi-transparent overlay "
   - rule: "edit rgb(r,g,b)"
     description: "Will use a custom color for the edit overlay"
-  - rule: "cleafix"
+  - rule: "clearfix"
     description: "Adds a clearfix mixin."
 ---
 
